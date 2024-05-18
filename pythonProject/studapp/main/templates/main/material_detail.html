@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title">{{ task.title }}</h1>
+                <h4 class="card-subtitle mb-2 text-muted">{{ task.author }}</h4>
+                <p class="card-text">{{ task.task }}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
